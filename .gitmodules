@@ -1,0 +1,3 @@
+[submodule "emoatlas"]
+	path = emoatlas
+	url = https://github.com/MassimoStel/emoatlas.git
