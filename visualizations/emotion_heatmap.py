@@ -27,7 +27,8 @@ for year in ['2016', '2017']:
     sd_df = pd.read_csv(SD_DIR / f"zscores_{year}.csv")
     sr_df = pd.read_csv(SR_DIR / f"zscores_{year}.csv")
     
-    emotions = nd_df['Unnamed: 0'].tolist()
+    emotions = nd_df['emotion'].tolist()
+
     
     values_dem = np.array([nd_df['zscore'].tolist(), sd_df['zscore'].tolist()])
     values_rep = np.array([nr_df['zscore'].tolist(), sr_df['zscore'].tolist()])
